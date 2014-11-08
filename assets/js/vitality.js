@@ -85,69 +85,22 @@ $("header.video").wallpaper({
     }
 });
 
+// Fix for Bootstrap Modal Shifting Page Contents
+$(window).on("load resize", function(e) {
+    (function(e) {
+        var $winWidth = e(window).width();
+        e(document).on('show.bs.modal', function() {
+            if ($winWidth < e(window).width()) {
+                e('body.modal-open,.navbar-fixed-top,.navbar-fixed-bottom').css('marginRight', e(window).width() - $winWidth)
+            }
+        });
+        e(document).on('hidden.bs.modal', function() {
+            e('body,.navbar-fixed-top,.navbar-fixed-bottom').css('marginRight', 0)
+        });
+    })(jQuery);
+});
+
 // Scrollspy: Highlights the navigation menu items while scrolling.
 $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
-
-// Portfolio Filtering Scripts & Hover Effect
-$(function() {
-    var filterList = {
-        init: function() {
-
-            // MixItUp plugin
-            // http://mixitup.io
-            $('#portfoliolist').mixitup({
-                targetSelector: '.portfolio',
-                filterSelector: '.filter',
-                effects: ['fade'],
-                easing: 'snap',
-                // call the hover effect
-                onMixEnd: filterList.hoverEffect()
-            });
-
-        },
-
-        hoverEffect: function() {
-
-            // Simple parallax effect
-            $('#portfoliolist .portfolio').hover(
-                function() {
-                    $(this).find('.caption').stop().animate({
-                        bottom: 0
-                    }, 200, 'easeOutQuad');
-                    $(this).find('img').stop().animate({
-                        top: -20
-                    }, 300, 'easeOutQuad');
-                },
-                function() {
-                    $(this).find('.caption').stop().animate({
-                        bottom: -75
-                    }, 200, 'easeInQuad');
-                    $(this).find('img').stop().animate({
-                        top: 0
-                    }, 300, 'easeOutQuad');
-                }
-            );
-
-        }
-
-    };
-
-    filterList.init();
-});
-
-// Load WOW.js on non-touch devices
-var isPhoneDevice = "ontouchstart" in document.documentElement;
-$(document).ready(function() {
-    if (isPhoneDevice) {
-        //mobile
-    } else {
-        //desktop               
-        // Initialize WOW.js
-        wow = new WOW({
-            offset: 50
-        })
-        wow.init();
-    }
-});
