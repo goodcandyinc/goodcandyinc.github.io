@@ -1,135 +1,320 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- this code between <header> ... </header> -->
-<link rel="stylesheet" href="./Developer/flat-ui/bootstrap/css/bootstrap.css">
-<link rel="stylesheet" href="./Developer/flat-ui/css/flat-ui.css">
-<!-- Using only with Flat-UI (free)-->
-<link rel="stylesheet" href="./Developer/common-files/css/icon-font.css">
 
-<!-- Font Awesome -->
-    <link href="./Developer/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- end -->
-<link rel="stylesheet" href="./Developer/common-files/css/animations.css">
-<!-- this code directly before </body> -->
-<script src="./Developer/common-files/js/jquery-1.10.2.min.js"></script>
-<script src="./Developer/flat-ui/js/bootstrap.min.js"></script>
-<script src="./Developer/common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-<script src="./Developer/common-files/js/modernizr.custom.js"></script>
-<script src="./Developer/common-files/js/page-transitions.js"></script>
-<script src="./Developer/common-files/js/easing.min.js"></script>
-<script src="./Developer/common-files/js/jquery.svg.js"></script>
-<script src="./Developer/common-files/js/jquery.svganim.js"></script>
-<script src="./Developer/common-files/js/jquery.parallax.min.js"></script>
-<script src="./Developer/common-files/js/startup-kit.js"></script>
+    <title>Good Candy Inc.</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-<!-- content -->
-<link rel="stylesheet" href="./Developer/ui-kit/ui-kit-content/css/style.css">
-<!-- header -->
-<link rel="stylesheet" href="./Developer/ui-kit/ui-kit-header/css/style.css">
-<!-- footer -->
-<link rel="stylesheet" href="./Developer/ui-kit/ui-kit-footer/css/style.css">
+    <!-- Retina.js - Load first for faster HQ mobile images. -->
+    <script src="assets/js/plugins/retina/retina.min.js"></script>
 
-<img src="" alt="">
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-<style>
-.content-5 {padding-top:80px;}
-</style>
+    <!-- Default Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
 
-	<meta charset="UTF-8">
-	<title>Web Design - Good Candy Inc.</title>
+    <!-- Modern Style Fonts (Include these is you are using body.modern!) -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+
+    <!-- Vintage Style Fonts (Include these if you are using body.vintage!) -->
+    <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="assets/css/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/jquery.fs.wallpaper.css" rel="stylesheet" type="text/css">
+
+    <!-- Vitality Theme CSS -->
+    <!-- Uncomment the color scheme you want to use. -->
+    <!-- <link href="assets/css/vitality-red.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-aqua.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-green.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-orange.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-pink.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-purple.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-tan.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-turquoise.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-yellow.css" rel="stylesheet" type="text/css"> -->
+
+    <!-- Style Switcher CSS - Demo Purposes Only! -->
+    <link id="changeable-colors" rel="stylesheet" href="assets/css/vitality-red.css">
+    <link href="assets/demo/style-switcher.css" rel="stylesheet">
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+	<style>.owl-wrapper{margin-left:auto; margin-right:auto;}
+
+	aside.cta-quote {padding:100px;}
+	.crazy{margin-left:-8px; width:80%;}		
+
+    .aboutustext {font-size:23px;}
+        
+	aside.cta-quote span.quote {font-size:30px;}
+    .test {font-size:40px;}   
+        .horse{margin-left:auto; margin-right:auto; width:90%;}
+        .seo{margin-top:-4px;}
+		.navbar{background-color:#222;}
+		
+		.navbar-fixed-top.navbar-expanded{padding:10px;}
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {background-color:#ef4035; color:red;}
+#resources{padding-bottom:5px;}
+
+	</style>
+
 </head>
-<body>
 
 
+<body id="page-top">
 
-<header class="header-20">
-    <div class="container">
-        <div class="row">
-            <div class="navbar col-sm-12" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle"></button>
-                    <a class="brand" href="#">
-                        <img src="./Developer/common-files/img/logo.png" width="80" height="80" alt=""> Good Candy Inc.
-                    </a>
+    <!-- Navigation -->
+    <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded" style="background-color:#222;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html#process">
+                    <img src="assets/img/logo.png" class="img-responsive" alt="Good Candy Inc.">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+					 <li class="dropdown">
+					  <a href="index.html/#process" class="dropdown-toggle" data-toggle="dropdown">Our Process <span class="caret"></span></a>
+					  <ul class="dropdown-menu" role="menu" style="background-color:#222; color:white;"}>
+						<li class="active" style="padding:10px;"><a href="#">Website Design</a></li>
+						<li style="padding:10px;"><a href="#">Social Media Management</a></li>
+						<li style="padding:10px;"><a href="#">SEO Optimization</a></li>
+					  </ul>
+					</li>
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+<!--                    <li>
+                        <a href="#pricing">Pricing</a>
+                    </li> -->
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	
+	
+	<section class="bg-gray">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+				<img src="./assets/img/WebDesign.png" alt="">
+                    <h1 style="color:black;">Website Design</h1>
+                    <p></p>
+                    <hr class="colored">
                 </div>
-                <div class="navbar-collapse collapse pull-right">
-                    <ul class="nav">
-						<li class="active"><a href="#">Website Design</a></li>
-                        <li><a href="SocialMedia.html">Social Media Management</a></li>
-                        <li><a href="#">SEO Expertise</a></li>
-                    </ul>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-md-offset-0">
+							<span class="aboutustext" style="color:black;">We reintroduce your company to the internet. We say (re) because even if you've never explored e-marketing before if you make a good product the internet knows about you. That's a fact. People talk and the web is where they're talking. What we do is get you in touch with these people through a combination strategy of web design, social media management, and SEO expertise. Our process is comprehensive and efficient.</span>
+						</div>
+					</div>	<br><br>
+					
+					<div class="row show-grid">
+					  <div class="col-md-3"> <a href="#MobileFriendly" class="btn btn-outline-dark crazy"><i class="fa fa-tablet"></i> Mobile Friendly</a></div>
+					  <div class="col-md-3"> <a href="#RetinaReady" class="btn btn-outline-dark crazy"><i class="fa fa-eye"></i> Retina Ready</a></div>
+					  <div class="col-md-3"> <a href="#Speedy" class="btn btn-outline-dark crazy"><i class="fa fa-rocket"></i> Speedy</a></div>
+					  <div class="col-md-3"> <a href="#Modern" class="btn btn-outline-dark crazy"><i class="fa fa-cogs"></i> Modern Design</a></div>
+					</div>
+				</div>
+            </div>
+			</div>
+		</section>   
+
+		<section class="bg-gray" id="MobileFriendly">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+				<div><i class="fa fa-mobile fa-5x"></i></div>
+                    <h2 style="color:black;">Mobile Friendly</h2>
+                    <p></p>
+                    <hr class="colored">
                 </div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-md-offset-0">
+							<span class="aboutustext" style="color:black;">We reintroduce your company to the internet. We say (re) because even if you've never explored e-marketing before if you make a good product the internet knows about you. That's a fact. People talk and the web is where they're talking. What we do is get you in touch with these people through a combination strategy of web design, social media management, and SEO expertise. Our process is comprehensive and efficient.</span>
+                               <br><br> <a href="#process" class="btn btn-outline-dark crazy">Learn More About<br>Our Process</a>
+						</div>
+					</div>	
+				</div>
             </div>
-        </div>
-    </div>
-    <div class="header-background"></div>
-</header>
+			</div>
+		</section>   
+
+		 <aside class="cta-quote" style="background-image: url('assets/img/bgaside3.png');">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 wow fadeIn" data-wow-delay=".2s">
+							<span class="quote" style="color:black;">We focus on sweet and simple solutions.</span>
+						</div>
+					</div>
+				</div>
+			</aside> 
+		
+		<section class="bg-gray" id="RetinaReady">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+				<div><i class="fa fa-eye fa-5x"></i></div>
+                    <h2 style="color:black;">Retina Ready</h2>
+                    <p></p>
+                    <hr class="colored">
+                </div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-md-offset-0">
+							<span class="aboutustext" style="color:black;">
+							We feel that one of the truest test of quality lay in the little things. Small Details, that many overlook entirely, but when done right and brought to light with clarity and confidence can make a world of difference.<br><br>Retina Ready display is one of these details. Basically the standard screen size and resolution of most mobile devices make it difficult for the human eye to distinguish individual pixels at an optimal viewing distancy, which results in poor quality images and less then optimal user experience. At Good Candy Inc. that's simply not what we're about So to fix this, all of our websites are designed as Retina Ready Pages.
+							</span>
+							<br><br>
+                               <br><h4>Check out some of our favorite resources that describe Retina Ready Design</h4>
+							   <div id="resources"><a href="http://www.webdesignerdepot.com/2013/04/why-should-you-become-retina-ready/" class="btn btn-outline-dark crazy" target="_blank"><i class="fa fa-external-link"></i> Why should you become retina ready?<br> -Web Designer Depot</a></div>
+							   <div id="resources"><a href="http://www.apple.com/macbook-pro/features-retina/#retina" class="btn btn-outline-dark crazy" target="_blank"><i class="fa fa-external-link"></i> Multimillion-pixel View<br> -apple inc.</a></div>
+							   <div id="resources"><a href="http://www.leemunroe.com/designing-for-high-resolution-retina-displays/" class="btn btn-outline-dark crazy" target="_blank"><i class="fa fa-external-link"></i> 5 Things I Learned Designing For High-Resolution Retina Displays<br> -Lee Munroe (Rackspace Product Designer)</a></div>
+
+					   </div>
+					</div>	
+				</div>
+            </div>
+			</div>
+		</section>  
 
 
 
-	<section class="content-5">
-    <div class="container">
-        <img src="./Developer/common-files/img/WebDesign.png"  height="300" alt="">
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h3>Our Take on Web Design</h3>
-                <p class="lead">We Implement Simple, Effective Web Solutions</p>
+		 <aside class="cta-quote" style="background-image: url('assets/img/bgaside3.png');">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 wow fadeIn" data-wow-delay=".2s">
+							<span class="quote" style="color:black;">Feel the clarity in every pixel...</span>
+						</div>
+					</div>
+				</div>
+			</aside> 
+		
+		<section class="bg-gray" id="Speedy">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+				<div><i class="fa fa-rocket fa-5x"></i></div>
+                    <h2 style="color:black;">Speed Rules</h2>
+                    <p></p>
+                    <hr class="colored">
+                </div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-md-offset-0">
+							<span class="aboutustext" style="color:black;">We reintroduce your company to the internet. We say (re) because even if you've never explored e-marketing before if you make a good product the internet knows about you. That's a fact. People talk and the web is where they're talking. What we do is get you in touch with these people through a combination strategy of web design, social media management, and SEO expertise. Our process is comprehensive and efficient.</span>
+                               <br><br> <a href="#process" class="btn btn-outline-dark crazy">Learn More About<br>Our Process</a>
+						</div>
+					</div>	
+				</div>
             </div>
-        </div>
-        <div class="row features">
-            <div class="col-sm-4 col-sm-offset-2">
-                <span class="fui-"><i class="fa fa-tablet"></i></span>
-                <h6>Mobile Friendly</h6>
-                <p>The mobile web is crucial in text text text text text text text text text text text text text text text text text </p>
+			</div>
+		</section>  		
+		
+		 <aside class="cta-quote" style="background-image: url('assets/img/bgaside3.png');">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 wow fadeIn" data-wow-delay=".2s">
+							<span class="quote" style="color:black;">We focus on sweet and simple solutions.</span>
+						</div>
+					</div>
+				</div>
+			</aside> 
+		
+		<section class="bg-gray" id="Modern">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+				<div><i class="fa fa-cogs fa-5x"></i></div>
+                    <h2 style="color:black;">Modern Design</h2>
+                    <p></p>
+                    <hr class="colored">
+                </div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-md-offset-0">
+							<span class="aboutustext" style="color:black;">We reintroduce your company to the internet. We say (re) because even if you've never explored e-marketing before if you make a good product the internet knows about you. That's a fact. People talk and the web is where they're talking. What we do is get you in touch with these people through a combination strategy of web design, social media management, and SEO expertise. Our process is comprehensive and efficient.</span>
+                               <br><br> <a href="#process" class="btn btn-outline-dark crazy">Learn More About<br>Our Process</a>
+						</div>
+					</div>	
+				</div>
             </div>
-            <div class="col-sm-4 col-sm-offset-1">
-                <span class="fui-"><i class="fa fa-cogs"></i></span>
-                <h6>Cutting Edge Web Standards</h6>
-                <p>When building and hosting your website, we make sure that we use the safest and most secure tools available on the market..........</p>
-            </div>
-        </div>
-        <div class="row features">
-            <div class="col-sm-4 col-sm-offset-2">
-                <span class="fui-"><i class="fa fa-eye"></i></span>
-                <h6>Retina Ready</h6>
-                <p>Seeing is believeing, and when your customer sees your product on one of our websites, ......Feel the clarity in each
-                    pixel.</p>
-            </div>
-            <div class="col-sm-4 col-sm-offset-1">
-                <span class="fui-"><i class="fa fa-rocket"></i></span>
-                <h6>Speed Speed Speed</h6>
-                <p>The spped of a website is one of the biggest determinates for if a customer ............</p>
-            </div>
-        </div>
-    </div>
-</section>
+			</div>
+		</section>  
+		
+		 <aside class="cta-quote" style="background-image: url('assets/img/bgaside3.png');">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 wow fadeIn" data-wow-delay=".2s">
+							<span class="quote" style="color:black;">We focus on sweet and simple solutions.</span>
+						</div>
+					</div>
+				</div>
+			</aside> 
+		
+    <!-- Core Scripts -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
 
-<footer class="footer-4 bg-midnight-blue">
-    <div class="container">
-        <a class="brand" href="./index.html">Good Candy Inc.</a>
-    </div>
-</footer>
+    <!-- Plugin Scripts -->
+    <script src="assets/js/plugins/jquery.easing.min.js"></script>
+    <script src="assets/js/plugins/classie.js"></script>
+    <script src="assets/js/plugins/cbpAnimatedHeader.js"></script>
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/jquery.fs.wallpaper.js"></script>
+    <script src="assets/js/contact_me.js"></script>
+    <script src="assets/js/plugins/jqBootstrapValidation.js"></script>
+
+    <!-- Vitality Theme Scripts -->
+    <script src="assets/js/vitality.js"></script>
+
 
 </body>
+
 </html>	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</body>
-</html>
