@@ -120,9 +120,9 @@ a:active {
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
 	<div class="container">
         <ul class="main-nav">
-        	<li><a href="#header">Home</a></li>
+        	<li><a href="#PageTop">Home</a></li>
             <li><a href="#service">Mission</a></li>
-            <li><a href="#Portfolio">About Us</a></li>
+            <li><a href="#AboutUs">About Us</a></li>
             <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
             <li><a href="#bands">Bands</a></li>
             <li><a href="#reviews">Reviews</a></li>
@@ -133,7 +133,7 @@ a:active {
 </nav><!--main-nav-end-->
 
 <header class="header" id="header test"><!--header-start-->
-	<div class="container">
+	<div class="container" id="PageTop">
     	<figure class="logo animated fadeInDown delay-07s">	
         </figure>	
         <h1 class="animated fadeInDown delay-07s">Flashbang Entertainment</h1>
@@ -160,7 +160,7 @@ a:active {
                 Check out our bands page for more information and audio samples!
 
                 </p>
-            <br><br><a class="link animated fadeInUp delay-1s" id="aboutbutton smooth" href="#bands">Check Out Our Bands!</a>
+            <br><br><a class="link animated fadeInUp delay-1s" id="aboutbutton smooth" href="#bands" style="width:100%; margin-left:auto;margin-right:auto;text-align:center">Check Out Our Bands!</a>
             </div>
             <div class="col-md-6  text-right wow fadeInUp delay-02s">
             	<img src="img/music.jpg" alt="">
@@ -174,7 +174,7 @@ a:active {
 
 
 
-<section class="main-section alabaster"><!--main-section alabaster-start-->
+<section class="main-section alabaster" id="AboutUs"><!--main-section alabaster-start-->
 	<div class="container">
         <h2>About Us</h2><br>
     	<div class="row">
@@ -337,7 +337,22 @@ a:active {
 			event.preventDefault();
 		});
 
-		$('#smooth').bind('click',function(event){
+		$('#service a').bind('click',function(event){
+			var $anchor = $(this);
+			
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 102
+			}, 1500,'easeInOutExpo');
+			/*
+			if you don't want to use the easing effects:
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1000);
+			*/
+			event.preventDefault();
+		});
+
+		$('.header a').bind('click',function(event){
 			var $anchor = $(this);
 			
 			$('html, body').stop().animate({
@@ -351,6 +366,7 @@ a:active {
 			*/
 			event.preventDefault();
 		});		
+
 	})
 </script>
 
