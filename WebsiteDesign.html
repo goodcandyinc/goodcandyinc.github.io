@@ -98,11 +98,11 @@
 </head>
 
 
-<body id="page-top">
+<body id="page-top" itemscope itemtype="http://schema.org/WebPage">
 
     <!-- Navigation -->
     <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded" style="background-color:#222;">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded" style="background-color:#222;" role="banner" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -127,21 +127,21 @@
                         <a href="#about">About</a>
                     </li>
 					 <li class="dropdown">
-					  <a href="index.html/#process" class="dropdown-toggle" data-toggle="dropdown">Our Process <span class="caret"></span></a>
+					  <a itemprop="url" href="index.html/#process" class="dropdown-toggle" data-toggle="dropdown"><span itemprop="name">Our Process </span<span class="caret"></span></a>
 					  <ul class="dropdown-menu" role="menu" style="background-color:#222; color:white;">
-						<li class="active" style="padding:10px;"><a href="#">Website Design</a></li>
-						<li style="padding:10px;"><a href="socialmedia.html">Social Media Management</a></li>
-						<li style="padding:10px;"><a href="seo.html">SEO Optimization</a></li>
+						<li class="active" style="padding:10px;"><a itemprop="url" href="#">Website Design</span></a></li>
+						<li style="padding:10px;"><a itemprop="url" href="socialmedia.html">Social Media Management</span></a></li>
+						<li style="padding:10px;"><a itemprop="url" href="seo.html"><span itemprop="name">SEO Optimization</span></a></li>
 					  </ul>
 					</li>
                     <li>
-                        <a href="#work">Work</a>
+                        <a itemprop="url" href="index.html#work"><span itemprop="name">Work</span></a>
                     </li>
 <!--                    <li>
                         <a href="#pricing">Pricing</a>
                     </li> -->
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a itemprop="url" href="index.html#contact"><span itemprop="name">Contact</span></a>
                     </li>
                 </ul>
             </div>
