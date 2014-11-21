@@ -218,6 +218,25 @@
 	left:110px;
 	width:186px;
 }
+
+@media (max-width: 420px){
+   .jp-audio .jp-type-single .jp-progress {
+	left:110px;
+	width:50%;
+	}
+  }
+ 
+ 
+ @media (min-width: 421px){
+.jp-audio .jp-type-single .jp-progress {
+	left:110px;
+	width:250px;
+}
+}
+
+
+
+
 .jp-audio .jp-type-playlist .jp-progress {
 	left:166px;
 	width:130px;
@@ -233,6 +252,7 @@
 	width:0px;
 	height:100%;
 	cursor: pointer;
+	width:80%;
 }
 .jp-play-bar {
 	background: url("jplayer.blue.monday.png") 0 -218px repeat-x ;
@@ -328,10 +348,21 @@
 	position:absolute;
 	top:50px;
 }
+
+@media (max-width: 420px){
 .jp-audio .jp-type-single .jp-time-holder {
 	left:110px;
-	width:186px;
+	width:50%;
 }
+}
+
+@media (min-width: 421px){
+.jp-audio .jp-type-single .jp-time-holder {
+	left:110px;
+	width:250px;
+}
+}
+
 .jp-audio .jp-type-playlist .jp-time-holder {
 	left:166px;
 	width:130px;
