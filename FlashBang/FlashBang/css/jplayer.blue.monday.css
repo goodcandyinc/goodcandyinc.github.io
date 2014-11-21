@@ -273,12 +273,25 @@
 	display:none;
 }
 
+@media (max-width: 550px){
 .jp-volume-controls {
 	position:absolute;
 	top:32px;
-	left:308px;
+	left:380px;
+	width:200px;
+	visibility: hidden;
+}
+}
+
+ @media (min-width: 551px){
+.jp-volume-controls {
+	position:absolute;
+	top:32px;
+	left:380px;
 	width:200px;
 }
+ }
+
 .jp-audio-stream .jp-volume-controls {
 	left:70px;
 }
