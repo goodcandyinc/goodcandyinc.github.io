@@ -239,15 +239,18 @@ a {
 
 #jp_container_1 {
   margin-right:auto;
-  margin-left:auto; 
+  margin-left:auto;
+  width:90%; 
 }
 
 #jp_container_2 {
   margin-right:auto;
-  margin-left:auto; 
+  margin-left:auto;
+  width:90%; 
 }
 
 #jp_container_3 {
   margin-right:auto;
   margin-left:auto; 
+  width:90%;
 }
