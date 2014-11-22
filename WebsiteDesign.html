@@ -38,7 +38,9 @@
     <link href="assets/css/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
     <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="assets/css/plugins/jquery.fs.wallpaper.css" rel="stylesheet" type="text/css">
-
+	<link rel="stylesheet" href="assets/css/animation.css">
+	
+	
     <!-- Vitality Theme CSS -->
     <!-- Uncomment the color scheme you want to use. -->
     <!-- <link href="assets/css/vitality-red.css" rel="stylesheet" type="text/css"> -->
@@ -93,6 +95,11 @@
 	.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {background-color:#ef4035; color:red;}
 	.resources{padding-bottom:5px;}
 	.buttonformat{white-space: normal;width: 100%;}
+	
+	#mobileIcon{visibility:hidden;}
+	#retinaIcon{visibility:hidden;}
+	#speedIcon{visibility:hidden;}
+	#designIcon{visibility:hidden;}	
 
 	</style>
 
@@ -185,7 +192,7 @@
             <div class="row" itemscope itemtype="http://schema.org/CreativeWork">
 			 <meta itemprop="inLanguage" content="en-US"/>
                 <div class="col-lg-12">
-				<div><i class="fa fa-mobile fa-5x"></i></div>
+				<div id="mobileIcon"><i class="fa fa-mobile fa-5x"></i></div>
                     <h2 style="color:black;" itemprop="name">Mobile Friendly</h2>
                     <p></p>
                     <hr class="colored">
@@ -228,7 +235,7 @@
 				<div class="row" itemscope itemtype="http://schema.org/CreativeWork">
 				 <meta itemprop="inLanguage" content="en-US"/>
 					<div class="col-lg-12">
-					<div>
+					<div id="retinaIcon">
 						<i class="fa fa-eye fa-5x" itemprop="image"></i> <!-- Icon from Font-Awesome -->
 					</div>
 						<h2 style="color:black;" itemprop="name">Retina Ready</h2> <!-- Title Header -->
@@ -273,7 +280,7 @@
 				<div class="row" itemscope itemtype="http://schema.org/CreativeWork">
 				<meta itemprop="inLanguage" content="en-US"/>
 					<div class="col-lg-12">
-					<div>
+					<div id="speedIcon"> 
 						<i class="fa fa-rocket fa-5x"></i> <!-- Icon from Font-Awesome -->
 					</div>
 						<h2 style="color:black;" itemprop="name">Speed Rules</h2> <!-- Title Header -->
@@ -317,7 +324,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-12">
-				<div><i class="fa fa-cogs fa-5x"></i></div>
+				<div id="designIcon"><i class="fa fa-cogs fa-5x"></i></div>
                     <h2 style="color:black;">Modern Design</h2>
                     <p></p>
                     <hr class="colored">
@@ -361,6 +368,53 @@
     <!-- Vitality Theme Scripts -->
     <script src="assets/js/vitality.js"></script>
 
+	<script>
+	$(window).scroll(function() {
+		$('#mobileIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("bigEntrance");
+			}
+		});
+	});
+	
+	$(window).scroll(function() {
+		$('#retinaIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});	
+	
+	$(window).scroll(function() {
+		$('#speedIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+
+	$(window).scroll(function() {
+		$('#designIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("hatch");
+			}
+		});
+	});	
+</script>
+	
+	
 
 </body>
 
