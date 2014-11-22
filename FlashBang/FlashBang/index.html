@@ -43,7 +43,7 @@
 	<!-- Custom CSS -->
 	<link href="css/custom.css" rel="stylesheet" type="text/css">
 	
-	<style>#team2{visibility:hidden;}#team1{visibility:hidden;} #bands{visibility:hidden;}</style>
+	<style></style>
     
     
 </head>
@@ -120,9 +120,9 @@
         </div><br><br>
  
         <div class="row">
-            <div class="col-md-4 col-md-offset-1"><h2>Rob McCabe</h2><h4 style="text-align:center">Founder & Musician</h4><div class="total"><img src="img/1.jpg" alt="" class="team" id="team1"></div></div>
+            <div class="col-md-4 col-md-offset-1"><h2>Rob McCabe</h2><h4 style="text-align:center">Founder & Musician</h4><div class="total"><img src="img/1.jpg" alt="" class="team"></div></div>
             <div class="col-md-1"><div class="breakerbreaker"></div></div>
-            <div class="col-md-4 col-md-offset-1"><h2>Tim Treweek</h2><h4 style="text-align:center">Founder & Musical Director</h4><img src="img/2.jpg" alt="" class="team" id="team2"></div>
+            <div class="col-md-4 col-md-offset-1"><h2>Tim Treweek</h2><h4 style="text-align:center">Founder & Musical Director</h4><img src="img/2.jpg" alt="" class="team"></div>
         </div>
 
         
@@ -139,7 +139,7 @@
 </h6>
       <div class="portfolioFilter">  
         <ul class="Portfolio-nav wow">
-        	<li><a href="#" data-filter="*" class="current" >All</a></li>
+        	<li id="all"><a href="#" data-filter="*" class="current" >All</a></li>
             <li><a href="#" data-filter=".soloandduo" >Solo & Duo</a></li>
              <li><a href="#" data-filter=".triobands" >Trio Bands</a></li>
             <li><a href="#" data-filter=".partybands" >Party Bands</a></li>
@@ -351,42 +351,5 @@ $(window).load(function(){
 </script>
 
 
-<script>
-	$(window).scroll(function() {
-		$('#team2').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
-				$(this).addClass("slideLeft");
-			}
-		});
-	});
-	
-		$(window).scroll(function() {
-		$('#team1').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
-				$(this).addClass("slideRight");
-			}
-		});
-	});
-	
-		$(window).scroll(function() {
-		$('#bands').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
-				$(this).addClass("expandOpen");
-			}
-		});
-	});	
-	
-</script>
-
-</script>
 </body>
 </html>
