@@ -160,16 +160,20 @@
 }
 
 .jp-play {
-	background: url("jplayer.blue.monday.png") 0 0 no-repeat;
+	background: url("player/play_NA.png") 0 0 no-repeat;
+	background-size: contain;
 }
 .jp-play:focus {
-	background: url("jplayer.blue.monday.png") -41px 0 no-repeat;
+	background: url("player/play_A.png") 0 0 no-repeat;
+	background-size: contain;
 }
 .jp-state-playing .jp-play {
-	background: url("jplayer.blue.monday.png") 0 -42px no-repeat;
+	background: url("player/pause_NA.png") 0 0 no-repeat;
+	background-size: contain;
 }
 .jp-state-playing .jp-play:focus {
-	background: url("jplayer.blue.monday.png") -41px -42px no-repeat;
+	background: url("player/pause_A.png") 0 0 no-repeat;
+	background-size: contain;
 }
 
 .jp-stop, .jp-previous, .jp-next {
@@ -179,12 +183,14 @@
 }
 
 .jp-stop {
-	background: url("jplayer.blue.monday.png") 0 -83px no-repeat;
+	background: url("player/stop_NA.png") 0 0 no-repeat;
 	margin-left:10px;
+	background-size: contain;
 }
 
 .jp-stop:focus {
-	background: url("jplayer.blue.monday.png") -29px -83px no-repeat;
+	background: url("player/stop_A.png") 0 0 no-repeat;
+		background-size: contain;
 }
 
 .jp-previous {
@@ -248,14 +254,14 @@
 	height:10px;
 }
 .jp-seek-bar {
-	background: url("jplayer.blue.monday.png") 0 -202px repeat-x;
+	background: url("player/seek_bar.png") 0 0 repeat-x;
 	width:0px;
 	height:100%;
 	cursor: pointer;
 	width:80%;
 }
 .jp-play-bar {
-	background: url("jplayer.blue.monday.png") 0 -218px repeat-x ;
+	background: url("player/play_bar.png") 0 0 repeat-x ;
 	width:0px;
 	height:100%;
 }
@@ -319,28 +325,34 @@
 }
 
 .jp-mute {
-	background: url("jplayer.blue.monday.png") 0 -170px no-repeat;
+	background: url("player/volume_mute_NA.png") 0 0 no-repeat;
+	background-size: contain;
 }
 .jp-mute:focus {
-	background: url("jplayer.blue.monday.png") -19px -170px no-repeat;
+	background: url("player/volume_mute_A.png") 0 0 no-repeat;
+	background-size: contain;
 }
 .jp-state-muted .jp-mute {
-	background: url("jplayer.blue.monday.png") -60px -170px no-repeat;
+	background: url("player/volume_mute_alt_NA.png") 0 0 no-repeat;
+	background-size: contain;	
 }
 .jp-state-muted .jp-mute:focus {
-	background: url("jplayer.blue.monday.png") -79px -170px no-repeat;
+	background: url("player/volume_mute_alt_A.png") 0 0 no-repeat;
+	background-size: contain;	
 }
 .jp-volume-max {
-	background: url("jplayer.blue.monday.png") 0 -186px no-repeat;
+	background: url("player/volume_loud_NA.png") 0 0 no-repeat;
+	background-size: contain;
 }
 .jp-volume-max:focus {
-	background: url("jplayer.blue.monday.png") -19px -186px no-repeat;
+	background: url("player/volume_loud_A.png") 0 0 no-repeat;
+	background-size: contain;	
 }
 
 .jp-volume-bar {
 	position: absolute;
 	overflow:hidden;
-	background: url("jplayer.blue.monday.png") 0 -250px repeat-x;
+	background: url("player/volume_bar.png") 0 0 repeat-x;
 	top:5px;
 	left:22px;
 	width:46px;
@@ -348,7 +360,7 @@
 	cursor: pointer;
 }
 .jp-volume-bar-value {
-	background: url("jplayer.blue.monday.png") 0 -256px repeat-x;
+	background: url("player/volume_bar_A.png") 0 0 repeat-x;
 	width:0px;
 	height:5px;
 }
@@ -609,19 +621,23 @@ span.jp-artist {
 }
 
 .jp-repeat {
-	background: url("jplayer.blue.monday.png") 0 -290px no-repeat;
+	background: url("player/repeat.png") 0 0 no-repeat;
+	background-size: contain;
 }
 
 .jp-repeat:focus {
-	background: url("jplayer.blue.monday.png") -30px -290px no-repeat;
+	background: url("player/repeat_A.png") 0 0 no-repeat;
+	background-size: contain;
 }
 
 .jp-state-looped .jp-repeat {
-	background: url("jplayer.blue.monday.png") -60px -290px no-repeat;
+	background: url("player/repeat.png") 0 0 no-repeat;
+	background-size: contain;
 }
 
 .jp-state-looped .jp-repeat:focus {
-	background: url("jplayer.blue.monday.png") -90px -290px no-repeat;
+	background: url("player/repeat_A.png") 0 0 no-repeat;
+	background-size: contain;
 }
 
 .jp-shuffle {
