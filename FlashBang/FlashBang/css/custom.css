@@ -254,3 +254,54 @@ a {
   margin-left:auto; 
   width:97%;
 }
+
+
+
+	.about {
+       text-decoration-line: 1.5; text-align: left;
+   }
+    
+    #aboutbutton{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        border: 2px solid #7cc576;
+    }
+    
+    .aboutus2{
+        text-align: center;
+    }
+    
+    .about2{
+     
+        line-height: 30px;
+        font-family: verdana;
+        font-size:  20px;  
+    }
+    
+    .pictures{
+        margin-left:auto;
+        margin-right: auto;       
+    }
+    
+    .breakerbreaker{
+        height:30px; width:10px;
+    }
+    
+    .total{
+        width:100%;
+    }
+    
+    .team{
+        margin-left: auto;
+        margin-right: auto; 
+        width: 100%;
+        display: block;
+        max-width: 400px    
+    }
+    
+ 
+
+	.desc{line-height:20px;}
+
