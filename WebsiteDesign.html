@@ -213,7 +213,7 @@
 							</ul>
 							<br>
 						</div>
-						<div class="col-md-3 col-md-offset-0" id="Bulletsimg">
+						<div data-sr='enter right move 200px reset' class="col-md-3 col-md-offset-0" id="Bulletsimg">
 								<img src="assets\img\WebDesign\mobile1.png" alt="" style="">
 								<br>
 						</div>							
@@ -230,9 +230,9 @@
 						
 					<div>
 						<br><h4>Check out some of our favorite resources that describe Mobile Friendly Design</h4>
-						<div class="resources"><a itemprop="sameAs" href="http://www.themobileplaybook.com/en-us/" class="btn btn-outline-dark crazybutton buttonformat" target="_blank" ><i class="fa fa-external-link"></i> The Mobile Playbook<br> -Google Inc.</a></div>
-						<div class="resources"><a itemprop="sameAs" href="http://www.huffingtonpost.com/ian-mills/5-reasons-you-absolutely-_b_5122485.html" class="btn btn-outline-dark crazybutton buttonformat" target="_blank"><i class="fa fa-external-link"></i> 5 Reasons You Absolutely Must Optimize Your Website for Mobile<br> -The Huffington Post</a></div>
-						<div class="resources"><a itemprop="sameAs" href="https://blog.kissmetrics.com/mobile-mania/?wide=1" class="btn btn-outline-dark crazybutton buttonformat" target="_blank"><i class="fa fa-external-link"></i> The Growing Importance of Mobile Website Optimization<br> -KISSmetrics</a></div>
+						<div data-sr='enter left move 500px reset over 0.6s' class="resources"><a itemprop="sameAs" href="http://www.themobileplaybook.com/en-us/" class="btn btn-outline-dark crazybutton buttonformat" target="_blank" ><i class="fa fa-external-link"></i> The Mobile Playbook<br> -Google Inc.</a></div>
+						<div data-sr='enter left move 500px reset over 1.6s' class="resources"><a itemprop="sameAs" href="http://www.huffingtonpost.com/ian-mills/5-reasons-you-absolutely-_b_5122485.html" class="btn btn-outline-dark crazybutton buttonformat" target="_blank"><i class="fa fa-external-link"></i> 5 Reasons You Absolutely Must Optimize Your Website for Mobile<br> -The Huffington Post</a></div>
+						<div data-sr='enter left move 500px reset over 2.0s' class="resources"><a itemprop="sameAs" href="https://blog.kissmetrics.com/mobile-mania/?wide=1" class="btn btn-outline-dark crazybutton buttonformat" target="_blank"><i class="fa fa-external-link"></i> The Growing Importance of Mobile Website Optimization<br> -KISSmetrics</a></div>
 					</div>
 				</div>
             </div>
@@ -242,7 +242,7 @@
 		 <aside class="cta-quote" style="background-image: url('assets/img/bgaside7.png');">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-10 col-md-offset-1 wow fadeIn" data-wow-delay=".2s">
+						<div class="col-md-10 col-md-offset-1 wow fadeIn" data-sr="eease-in 50px reset">
 							<span class="quote" style="color:white;">It is time to take action and not just do mobile, <b>but do it right</b>.</span>
 						</div>
 					</div>
@@ -388,6 +388,14 @@
     <!-- Vitality Theme Scripts -->
     <script src="assets/js/vitality.js"></script>
 
+	<script src='assets/js/plugins/scrollReveal.min.js'></script>
+    <script>
+
+      window.sr = new scrollReveal();
+
+    </script>
+	
+	
 	<script>
 	$(window).scroll(function() {
 		$('#mobileIcon').each(function(){
@@ -433,16 +441,7 @@
 		});
 	});
 
-	$(window).scroll(function() {
-		$('#Bulletsimg').each(function(){
-		var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+900) {
-				$(this).addClass("slideLeft");
-			}
-		});
-	});
 
 	
 </script>
