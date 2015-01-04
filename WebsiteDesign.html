@@ -23,6 +23,7 @@
     <!-- Default Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,300,800' rel='stylesheet' type='text/css'>
 
 
 
@@ -94,6 +95,9 @@
 	#retinaIcon{visibility:hidden;}
 	#speedIcon{visibility:hidden;}
 	#designIcon{visibility:hidden;}	
+	#Bullets{text-align:left; margin-left:30px; font-family: 'Open Sans', sans-serif; font-size:20px;}
+	#mobilestats > li {padding-top:15px;}
+	#Bulletsimg > img {display:block; margin:auto; height:250px; max-height:100%; }
 
 	</style>
 
@@ -193,14 +197,26 @@
                 </div>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 col-md-offset-0">
-						<span class="aboutustext" style="color:black;" itemprop="text">
-							To say that the ways in which people search for information today are rapidly changing is an understatement. [Just as the newspaper was replaced by the desktop over recent years, the desktop is being replaced by mobile devices]
+						<div class="col-md-12 col-md-offset-0" style="text-align:left;">
+							<span class="aboutustext" style="color:black;" itemprop="text">
+							All Good Candy designed websites function flawlessly and look great across the full range internet ready devices. This way we ensure that no matter how your customers are viewing your website they all get the same sweet, simple look and professional experience.
 							<br><br>
-							Whenever and wherever your customers are when they are struck with the desire for your product or service is when and where they want to know about it.  A hungry man stuck in traffic isn't going to wait to get home to seek out his dinner options when he can actively start the search  right away from his phone.  This is a key growing trend that we pay very much attention to.
-							<br><br>
-							All Good Candy designed websites function flawlessly and look great across the full range internet ready devices.  This way we ensure that no matter how your customers are viewing your website they all get the same sweet, simple look and professional experience.
-							<br><br>
+						</div>
+					<div class="row">	
+						<div class="col-md-8 col-md-offset-0" id="Bullets">
+							<ul class="" id="mobilestats">
+								<li>As of May 2013, <b>63%</b> of adult cell owners use their phones to go online.</li>
+								<li>Mobile internet usage in the US has grown by 73% over the last 12 months to reach <b>24.4%</b> in August.</li>
+								<li><b>34%</b> of cell internet users go online mostly using their phones, and not using some other device such as a desktop or laptop computer.</li>
+								<li><b>1/4</b> of online purchases on Black Friday this year occurred using a mobile device.</li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-md-offset-0" id="Bulletsimg">
+								<img src="assets\img\WebDesign\mobile1.png" alt="" style="">
+						</div>	
+						
+						
+					</div>	
 						</span>						
                                <br><h4>Check out some of our favorite resources that describe Mobile Friendly Design</h4>
 							   <div class="resources"><a itemprop="sameAs" href="http://www.themobileplaybook.com/en-us/" class="btn btn-outline-dark crazybutton buttonformat" target="_blank" ><i class="fa fa-external-link"></i> The Mobile Playbook<br> -Google Inc.</a></div>
@@ -405,7 +421,20 @@
 				$(this).addClass("hatch");
 			}
 		});
-	});	
+	});
+
+	$(window).scroll(function() {
+		$('#Bulletsimg').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+900) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+
+	
 </script>
 	
 	
