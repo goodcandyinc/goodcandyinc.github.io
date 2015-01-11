@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   viewBox="0 0 100 180"
+   preserveAspectRatio="xMidYMid meet"
+   width="100"
+   height="180"
+   id="svg2">
+  <defs
+     id="defs4">
+    <clipPath
+       id="clipPath8040">
+      <path
+         d="m 651,95.999 14,0 0,-23 -14,0 0,23 z"
+         id="path8042" />
+    </clipPath>
+    <clipPath
+       id="clipPath8024">
+      <path
+         d="m 654,69 4,0 0,-4 -4,0 0,4 z"
+         id="path8026" />
+    </clipPath>
+    <clipPath
+       id="clipPath8010">
+      <path
+         d="m 649,92 14,0 0,-22 -14,0 0,22 z"
+         id="path8012" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-872.36218)"
+     id="layer1">
+    <g
+       transform="matrix(5.5555548,0,0,-5.5555548,99.999977,1040.1399)"
+       id="g8002">
+      <path
+         d="m 0,0 c 0,-1.104 -0.896,-2 -2,-2 l -14,0 c -1.104,0 -2,0.896 -2,2 l 0,28 c 0,1.104 0.896,2 2,2 l 14,0 c 1.104,0 2,-0.896 2,-2 L 0,0 z"
+         id="path8004"
+         style="fill:#434854;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <g
+       transform="matrix(5.5555548,0,0,-5.5555548,-3594.4439,1406.8063)"
+       id="g8006">
+      <g
+         id="g8008" />
+      <g
+         id="g8014">
+        <g
+           clip-path="url(#clipPath8010)"
+           id="g8016"
+           style="opacity:0.10000598">
+          <path
+             d="m 663,70 -14,0 0,22 14,0 0,-22 z"
+             id="path8018"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(5.5555548,0,0,-5.5555548,-3594.4439,1406.8063)"
+       id="g8020">
+      <g
+         id="g8022" />
+      <g
+         id="g8028">
+        <g
+           clip-path="url(#clipPath8024)"
+           id="g8030"
+           style="opacity:0.10000598">
+          <g
+             transform="translate(658,67)"
+             id="g8032">
+            <path
+               d="m 0,0 c 0,1.105 -0.895,2 -2,2 -1.105,0 -2,-0.895 -2,-2 0,-1.105 0.895,-2 2,-2 1.105,0 2,0.895 2,2"
+               id="path8034"
+               style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(5.5555548,0,0,-5.5555548,-3594.4439,1406.8063)"
+       id="g8036">
+      <g
+         id="g8038" />
+      <g
+         id="g8044">
+        <g
+           clip-path="url(#clipPath8040)"
+           id="g8046"
+           style="opacity:0.10000598">
+          <g
+             transform="translate(663,95.999)"
+             id="g8048">
+            <path
+               d="M 0,0 -12,0 2,-23 2,-2 C 2,-0.896 1.104,0 0,0"
+               id="path8050"
+               style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
